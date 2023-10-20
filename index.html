@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CAMPO RAPATO</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&amp;family=Press+Start+2P&amp;display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <!-- Foglio di stile -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--Tasto Audio-->
+    <div><button class="tastoaudio">🎶</button></div>
+
+    <!--Audio-->
+    <audio id="background-audio" loop>
+        <source
+            src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Music_for_Video/Chad_Crouch/Jams/Chad_Crouch_-_Game.mp3"
+            type="audio/mpeg">
+    </audio>
+    <!--Game-->
+    <div class="game-container">
+        <!-- Pannello informazioni di gioco -->
+        <div class="game-panel">
+            <div class="title-panel">
+                <h1>ATTENTO ALLA RAPA</h1>
+            </div>
+
+            <!-- Punteggio -->
+            <div class="score">
+                <span>Quante ne hai evitate?</span>
+                <span class="score-counter">00000</span>
+            </div>
+        </div>
+
+        <!-- Tabellone di gioco -->
+        <div class="game-board">
+            <div class="grid">
+                <!-- Qui ci saranno le celle -->
+            </div>
+
+            <!-- Schermata di fine gioco -->
+            <div class="end-game-screen hidden">
+                <h2 class="end-game-text">Oh no!<br>Hai trovato una rapa</h2>
+                <button class="play-again">Gioca ancora</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
